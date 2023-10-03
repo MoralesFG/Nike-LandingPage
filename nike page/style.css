@@ -1,0 +1,143 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}
+
+header {
+    position: relative;
+    width: 100%;
+    /*min-height: 100vh;*/
+    padding: 100px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar ul{
+    position: relative;
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.swoosh {
+    width: 80px;
+    height: 35px;
+    margin-right: 320px;
+}
+
+.main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.titulo {
+    font-size: 40px;
+    letter-spacing: -2px;
+}
+
+.subtitulo {
+    font-size: 70px;
+    letter-spacing: -2px;
+}
+
+.jordan {
+    width: 820px;
+}
+
+.texto {
+    margin-bottom: 30px;
+    margin-top: -20px;
+
+}
+
+.info-btn {
+    width: 260px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+}
+
+.info-btn:hover {
+    background-color: rgb(82, 120, 45);
+    transition: all 0.4s ease;
+}
+
+.mini-images {
+    width: 160px;
+}
+
+.thumb {
+    display: flex;
+    justify-content: center;
+}
+
+.thumb li {
+    list-style: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumb li:hover {
+    transform: translateY(-15px);
+}
+
+.thumbnails {
+    margin-right: 40px;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(28, 67, 111);
+    clip-path: circle(600px at right 770px);
+    z-index: -1;
+}
+

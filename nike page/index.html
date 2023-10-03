@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Home Page</title>
+
+    <!-- ICONS FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;0,600;1,200&family=Open+Sans:wght@400;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <section class="navbar">
+            <a href="#" class="logo"><img src="IMG/Nike swoosh.png" class="swoosh"></a>
+            <ul class="menu">
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Contacto<a></li>
+            </ul>
+        </section>
+    </header>
+
+    <main class="main">
+            <div class="content">
+                <div class="text-box">
+                    <h2 class="titulo">It's not just a Shoe<br><span class="subtitulo">It's Jordan 1 Retro</span></h2>
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic nobis inventore atque
+                        obcaecati officiis architecto soluta, porro voluptas voluptatem quia eum minima beatae explicabo
+                        incidunt exercitationem eveniet adipisci eligendi dolore!</p>
+                    <a href="#" class="info-btn">more info</a>
+                </div>
+
+                <div class="img-box">
+                    <img src="IMG/1-2.webp" class="jordan">
+                </div>
+            </div>
+
+            <div class="shoes-slider">
+                <ul class="thumb">
+                    <li class="thumbnails"><img src="IMG/1-2.webp" class="mini-images" onclick="imgSlider('IMG/1-2.webp')"></li>
+                    <li class="thumbnails"><img src="IMG/img1.webp" class="mini-images" onclick="imgSlider('IMG/img1.webp')"></li>
+                    <li class="thumbnails"><img src="IMG/img4.webp" class="mini-images" onclick="imgSlider('IMG/img4.webp')"></li>
+                </ul>
+            </div>
+
+            <div class="circle"></div>
+
+    </main>
+
+
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.jordan').src = anything;
+        }
+    </script>
+</body>
+
+</html>
